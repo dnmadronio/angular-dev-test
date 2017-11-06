@@ -1,0 +1,21 @@
+<form class="form-inline">
+  <div class="row">
+	<div class="col-md-1">
+		<div class="btn-group" data-toggle="buttons">			
+			<label class="btn btn-default" title="Select all" data-toggle="tooltip" data-placement="top" tooltip ng-click="selectAll($event)" ng-checked="isSelectedAll()">				
+				<input id="select-all" type="checkbox" >				
+				<span class="glyphicon glyphicon-ok" autocomplete="off" ></span>
+			</label>
+		</div>
+	</div>
+    <div class="col-md-2">
+      <input type="text" class="form-control filter-input" id="exampleInputEmail3" placeholder="Search..." ng-model="filter.text">
+    </div>
+    <div class="col-md-8 letter-container">
+      <div ng-repeat="letter in alphabeth" class="filter-letter" ng-click="selectLetter($index)" ng-class="{'active': $index === selectedLetterIndex}" >{{letter}}</div>
+    </div>
+    <div class="col-md-1">
+      <div title="Email selected members" class="email-icon pull-right" data-toggle="tooltip" data-placement="top" tooltip></div>
+    </div>
+  </div>
+</form>
