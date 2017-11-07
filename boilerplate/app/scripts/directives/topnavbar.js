@@ -5,5 +5,5 @@ angular.module('angular14InterviewApp').directive('topNavbar', function() {
     restrict: 'E',
     controller: 'NavbarCtrl',
     templateUrl: 'views/top-navbar.html'
-  }
+  };
 });

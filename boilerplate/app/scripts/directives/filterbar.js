@@ -14,3 +14,4 @@ angular.module('angular14InterviewApp')
       controller: 'FilterbarCtrl'
     };
   });
+ 

@@ -19,7 +19,7 @@ angular.module('angular14InterviewApp')
          return data.data;
        })
        .catch(function(err) {
-         console.log('err');
-       })
-    }
+         console.log(err.message);
+       });
+    };
   }]);

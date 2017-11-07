@@ -13,7 +13,7 @@ angular.module('angular14InterviewApp')
     return function (input, startWithLetter) {
       console.log(input);
       console.log(startWithLetter);
-      if(!startWithLetter) return input;
+      if(!startWithLetter) {return input;}
       var filtered = [];
       angular.forEach(input, function(item) {
         if(startWithLetter.toLowerCase() === item.nm.charAt(0).toLowerCase()) {

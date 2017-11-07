@@ -12,7 +12,8 @@ angular.module('angular14InterviewApp')
     $scope.activeSearchBar = false;
 
     $scope.toggleSearchBar = function() {
-      return $scope.activeSearchBar = !$scope.activeSearchBar
+      var bRetVal = ($scope.activeSearchBar === $scope.activeSearchBar);
+      return !bRetVal;
     };
 
   });
